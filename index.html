@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Resume Website Design</title>
+    </head>
+    <style>
+       
+
+
+
+/* CSS code for the overall html file */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #24252A;
+        }
+       li,a, button{
+        font-family: "montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
+        text-decoration: none;
+       }
+       p{
+        font-family: "montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+       }
+       h1{
+        font-size: 60px;
+        color: #edf0f1;
+        background-position: center;
+        align-items: center;
+        box-sizing: border-box;
+        text-align: center;
+       }
+
+
+/*Start off the css code of the nav bar*/
+       header{
+        background-color: #24252A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        position: fixed;
+        width: 100%;
+       }
+       .logo{
+        cursor: pointer;
+       }
+       .nav_links{
+        list-style: none;
+       }
+       .nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+       }
+       .nav_links li a{
+        transition: all 0.3s ease 0s;
+       }
+       .nav_links li a:hover{
+        color: #0088a9;
+       }
+       button{
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+       }
+       button:hover{
+        background-color: rgba(0,136,169,0.8);
+
+       }
+/*End of the css code for the nav bar*/
+
+    
+/* Start of CSS code for section One */
+        .sec_one{
+            position: static;
+            height: large; 
+            width: 100%;
+            box-sizing: border-box;
+            background-position: center;
+        }
+        .text-box-intro{
+            color: #edf0f1;
+            padding: 100px;
+            text-align: center;
+        }
+        .text-box-intro h1{
+            
+            font-size: 60px;    
+        }
+        .text-box-intro p{
+            
+            height: 700px;
+
+        }
+        /*.fbi img{
+           width: 600px;
+           height: 500px;
+           text-align: center;
+           padding: 50px;
+        }*/
+       /* .dsc img{
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            float: left;
+            padding: 50px;
+            
+        }*/
+/*End of section one CSS code*/
+
+/* Start of section two CSS code */
+        .sec_two{
+            position: static;
+            height: 800px; 
+            width: 100%;
+            box-sizing: border-box;
+            background-position: center;
+        }
+        .text-box-Projects{
+            text-align: center;
+            font-size: 30px;
+            color: #edf0f1;
+            padding: 100px;
+        }
+        .sec_three{
+            position: static;
+            height: 800px; 
+            width: 100%;
+            box-sizing: border-box;
+            background-position: center;
+        }
+        .text-box-project-two{
+            padding: 100px;
+
+        }
+       
+/* End of section two CSS code */
+/*
+    @media (min-width: 600px){
+        p{
+            font-size: 1.25rem;
+        }
+    }
+    @media (min-width: 800px){
+        p{
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+    }*/
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <body>
+        <section class="sec_one">
+            <header>
+                <img src="logo.jpg" alt="" width="150px" height="50px">
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button>CONTACT</button></a>
+            </header>
+
+
+
+
+
+
+            <div id="Home"; class="text-box-intro">
+                <h1>My Name is</h1>
+                <br>
+                <h1>Alexander Raymond</h1>
+                
+                
+                <!-- <div class="fbi">
+                    <img  src="fbicyber" > 
+                </div>
+    
+                <div class="dsc">
+                    <img src="dsc logo" alt="">
+                </div>-->
+                <br><br><br>
+                <p>
+                    I am currently the senior shift manager at my Walgreens location and a Junior at Daytona State College.
+                    Currently, I am studying IT with a specialization in Cyber Security with the hopes of getting into an FBI internship in the summer of 2023!
+                    This is where I plan to showcase my two main side projects that I hope to complete by the end of my bachelor’s degree.
+                    My first main goal is to make a secure texting application that allows civilians to send encrypted messages to each other.
+                    My second side project is to make my own VPN, this project is mostly because I don’t like paying subscription fees.
+
+                </p>
+                
+            </div>
+            <br><br><br><br><br><br>
+             
+           
+                
+        </section>
+        
+        <section class="sec_two">
+            <div id="projects"; class="text-box-Projects">
+                <h1>
+                    Project One: Encrypted Messaging
+                </h1>
+                <p>
+                    The project is still in the concept phase however, the way I want to make it work is relatively simple. I want each installation of
+                    the app to generate a unique key that is attached to that indiviual device. So once you add someone to the apps contact list you can 
+                    send a message that is encrypted until it reaches the other parties device.
+                </p>
+            </div>
+            
+        </section>
+        <section class="sec_three">
+            <div class="text-box-project-two">
+                <h1>
+                    Project Two: Personal VPN
+                </h1>
+                <p>
+                    The vpn I believe is going to pose more of a challenge then the encrypted messaging app due to needing to have a server that can run it.
+                    I would also like to have the server located in country that doesn't have data harvasting laws. This would add another layer of security
+                    to it as a lot of the ones in America are required to hold on to your data for a period of time. I would also like the server to run the 
+                    vpn in ram that way once you shut off the vpn all the information would delete automatically.
+                </p>
+            </div>
+        </section>
+    
+    </body>
+</html>
